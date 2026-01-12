@@ -2,10 +2,12 @@ from langchain_core.prompts import ChatPromptTemplate
 from src.core.prompt_loader import load_prompt
 from src.core.llm import get_llm
 from src.models.schemas import FinalReport
+from src.core.metrics import timed
 
 llm = get_llm()
 PROMPT = load_prompt("reviewer")
 
+@timed("Reviewer")
 async def reviewer_node(state):
     drafts = "\n\n".join(
         f"## {s.title}\n{s.content}\n\nKey Stats:\n- " +
