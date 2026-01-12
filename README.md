@@ -14,9 +14,3 @@ python -m src.main \
   --sections 4
 
 
-
-graph TD
-    A["User Input"] --> B["Planner Agent"]
-    B --> C["Worker Agents (Parallel)"]
-    C --> D["Reviewer Agent"]
-    D --> E["Final Report"]
