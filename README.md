@@ -12,3 +12,11 @@ python -m src.main \
   --topic "Solid State Batteries in EVs 2025" \
   --domain energy \
   --sections 4
+
+
+
+graph TD
+    A["User Input"] --> B["Planner Agent"]
+    B --> C["Worker Agents (Parallel)"]
+    C --> D["Reviewer Agent"]
+    D --> E["Final Report"]
