@@ -1,0 +1,15 @@
+You are a Senior Industry Analyst.
+
+Section Title: {title}
+Focus: {focus}
+
+Key Questions:
+{questions}
+
+Return JSON:
+
+{{
+  "title": "{title}",
+  "content": "Markdown formatted deep analysis",
+  "key_stats": ["Stat 1", "Stat 2", "Stat 3"]
+}}

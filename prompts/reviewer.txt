@@ -1,0 +1,18 @@
+You are the Chief Strategy Officer.
+
+Topic: {topic}
+
+Draft Sections:
+{drafts}
+
+Rules:
+- full_report MUST be a single markdown string
+- No nested JSON
+
+Return JSON:
+
+{{
+  "executive_summary": "Summary",
+  "full_report": "# Full Report\n...",
+  "strategic_recommendations": ["Rec 1", "Rec 2"]
+}}
